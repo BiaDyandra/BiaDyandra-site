@@ -1,0 +1,116 @@
+/* Reset e estrutura */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff0f5; /* rosa claro */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container principal */
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Cabeçalho */
+.topo {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding-bottom: 100px; /* espaço extra para imagem sobrepor */
+}
+
+.banner {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  filter: brightness(0.6);
+  border-bottom: 4px solid #ffb6c1;
+}
+
+.foto-perfil-container {
+  position: absolute;
+  top: 180px; /* POSIÇÃO CORRIGIDA: sobe a imagem dentro do banner */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.foto-perfil {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+}
+
+/* Nome e subtítulo */
+.nome-cargo {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.nome-cargo h1 {
+  font-size: 2rem;
+  color: #c71585;
+  margin-bottom: 5px;
+}
+
+.nome-cargo p {
+  font-size: 1.1rem;
+  color: #6a0d45;
+}
+
+/* Seções principais */
+main section {
+  margin: 40px 0;
+  background-color: #ffe4ec;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  color: #d63384;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  padding: 6px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+ul li::before {
+  content: "♥";
+  position: absolute;
+  left: 0;
+  color: #ff69b4;
+}
+
+/* Contato */
+.contact p {
+  margin-bottom: 8px;
+}
+
+/* Rodapé */
+footer {
+  background-color: #ffc0cb;
+  color: #6a0d45;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 40px;
+  font-weight: bold;
+}
